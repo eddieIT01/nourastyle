@@ -68,17 +68,17 @@ export default function BookingCTA() {
         className="relative z-20 max-w-4xl mx-auto px-6 text-center">
 
         <span className="section-label mb-8 mx-auto justify-center">
-          {t('احجزي موعدك', 'Book Your Appointment')}
+          {t('تواصلي معنا', 'Contact Us')}
         </span>
 
         <h2 className="font-arabic text-editorial-xl text-foreground mb-6">
-          {t('احجزي موعدك اليوم', 'Book Your Appointment Today')}
+          {t('تواصلي معنا اليوم', 'Get In Touch Today')}
         </h2>
 
         <p className="font-arabic text-lg text-foreground-muted mb-12 max-w-xl mx-auto leading-relaxed">
           {t(
-            'تواصلي معنا عبر واتساب لحجز موعدك في أقرب فرع',
-            'Contact us via WhatsApp to book your appointment at the nearest branch'
+            'تواصلي معنا عبر واتساب للاستفسار عن خدماتنا في أقرب فرع',
+            'Contact us via WhatsApp to ask about our services at the nearest branch'
           )}
         </p>
 

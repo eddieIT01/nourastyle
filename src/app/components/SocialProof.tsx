@@ -5,34 +5,32 @@ import { useLanguage } from '@/context/LanguageContext';
 import AppImage from '@/components/ui/AppImage';
 import { SALON_INSTAGRAM, SALON_INSTAGRAM_HANDLE } from '@/lib/salonData';
 
-// Real Unsplash photos representing the types of work done at the salon
-// These are professional beauty photography — no AI generated images
+// Real Noura Style Salon photos for Instagram preview grid
 const INSTAGRAM_PREVIEWS = [
 {
-  src: "https://img.rocket.new/generatedImages/rocket_gen_img_17451c325-1783269430228.png",
-  alt: 'Professional hair styling and blowout — elegant salon work'
+  src: "/assets/images/styles-1787668791948.png",
+  alt: 'تسريحات شعر احترافية من صالون نوره ستايل — Professional hair styling at Noura Style Salon'
 },
 {
-  src: "https://img.rocket.new/generatedImages/rocket_gen_img_159e0c282-1766985572664.png",
-  alt: 'Nail art and manicure — detailed professional nail care'
+  src: "/assets/images/image-1787666397532.png",
+  alt: 'مانيكير كروم ولؤلؤي أنيق من صالون نوره ستايل — Chrome and pearl nail art manicure at Noura Style Salon'
 },
 {
-  src: "https://img.rocket.new/generatedImages/rocket_gen_img_1d79a4177-1772070077523.png",
-  alt: 'Professional makeup application — warm tones beauty artistry'
+  src: "/assets/images/image-1787665927296.png",
+  alt: 'مكياج احترافي للمناسبات من صالون نوره ستايل — Professional makeup for events at Noura Style Salon'
 },
 {
-  src: "https://images.unsplash.com/photo-1659521931882-7b21a3678486",
-  alt: 'Bridal hair and makeup preparation — elegant romantic styling'
+  src: "/assets/images/maskkatan-1787668021071.png",
+  alt: 'ماسك طبيعي بدرة الكتان من صالون نوره ستايل — Natural flaxseed hair mask at Noura Style Salon'
 },
 {
-  src: "https://img.rocket.new/generatedImages/rocket_gen_img_1d1f245cd-1767692472099.png",
-  alt: 'Skincare facial treatment — luxurious skin care session'
+  src: "/assets/images/redhair-1787667609644.png",
+  alt: 'صبغ شعر بلون بورغندي أحمر غامق من صالون نوره ستايل — Deep burgundy red hair color at Noura Style Salon'
 },
 {
-  src: "https://img.rocket.new/generatedImages/rocket_gen_img_15c0c61f3-1778168794463.png",
-  alt: 'Hair coloring process — professional color technique in salon'
+  src: "/assets/images/lulunora-1787668372501.png",
+  alt: 'وصلات شعر احترافية بتجعيدات ذهبية كارميل من صالون نوره ستايل — Professional hair extensions at Noura Style Salon'
 }];
-
 
 
 export default function SocialProof() {

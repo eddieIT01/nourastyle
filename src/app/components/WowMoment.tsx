@@ -176,7 +176,7 @@ export default function WowMoment() {
             rel="noopener noreferrer"
             className="btn-primary text-base px-10 py-5">
 
-            <span>{t('احجزي الآن', 'BOOK NOW')}</span>
+            <span>{t('تواصلي معنا', 'CONTACT US')}</span>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>

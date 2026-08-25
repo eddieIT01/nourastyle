@@ -40,7 +40,16 @@ const AppImage = memo(function AppImage({
     unoptimized = false,
     ...props
 }: AppImageProps) {
-    const [imageSrc, setImageSrc] = useState(src);
+    // Strip query strings from local image paths (e.g. ?v=2) — Next.js localPatterns
+    // does not support wildcard search matching, and local assets don't need cache-busting params.
+    const cleanSrc = useMemo(() => {
+        if (typeof src === 'string' && src.startsWith('/') && src.includes('?')) {
+            return src.split('?')[0];
+        }
+        return src;
+    }, [src]);
+
+    const [imageSrc, setImageSrc] = useState(cleanSrc);
     const [isLoading, setIsLoading] = useState(true);
     const [hasError, setHasError] = useState(false);
 
@@ -95,15 +104,12 @@ const AppImage = memo(function AppImage({
 
     if (fill) {
         return (
-            <div className="relative" style={{ width: '100%', height: '100%' }}>
-                <Image
-                    {...imageProps}
-                    fill
-                    sizes={sizes || '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'}
-                    style={{ objectFit: 'cover' }}
-                    {...props}
-                />
-            </div>
+            <Image
+                {...imageProps}
+                fill
+                sizes={sizes || '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'}
+                {...props}
+            />
         );
     }
 

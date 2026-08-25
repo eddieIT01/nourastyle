@@ -41,7 +41,6 @@ const structuredData = {
     },
   ],
   priceRange: '$$',
-  servesCuisine: undefined,
   hasMap: 'https://www.google.com/maps/search/صالون+نوره+ستايل+صباح+السالم+الكويت',
   foundingDate: '2017',
 };
