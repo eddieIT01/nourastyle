@@ -14,6 +14,16 @@ const nextConfig = {
     remotePatterns: imageHosts,
     minimumCacheTTL: 60,
     qualities: [75, 85, 100],
+    localPatterns: [
+      {
+        pathname: '/assets/images/**',
+        search: '',
+      },
+      {
+        pathname: '/assets/images/**',
+        search: '?v=*',
+      },
+    ],
   },
   webpack(
     config,

@@ -56,7 +56,7 @@ export default function SignatureServices() {
         </div>
 
         {/* Natural Hair Masks Feature — full-width featured panel */}
-        <div className="sig-panel mb-6 relative overflow-hidden group" style={{ minHeight: 'clamp(380px, 55vw, 620px)' }}>
+        <div className="sig-panel mb-6 relative overflow-hidden group" style={{ minHeight: 'clamp(380px, 55vw, 620px)', height: 'clamp(380px, 55vw, 620px)' }}>
           <AppImage
             src="/assets/images/maskkatan-1787668021071.png"
             alt="ماسك طبيعي بدرة الكتان في وعاء خشبي مع براعم الورد — Natural flaxseed hair mask at Noura Style Salon"
@@ -81,7 +81,7 @@ export default function SignatureServices() {
               rel="noopener noreferrer"
               className="btn-primary">
 
-              <span>{t('استفسري عن الباقات', 'Enquire About Packages')}</span>
+              <span>{t('استفسري عن الباقات', 'Ask About Packages')}</span>
             </a>
           </div>
         </div>
@@ -126,7 +126,7 @@ export default function SignatureServices() {
                 rel="noopener noreferrer"
                 className="btn-primary text-xs">
 
-                <span>{t('احجزي', 'Book')}</span>
+                <span>{t('استفسري عن الخدمة', 'Ask About This Service')}</span>
               </a>
             </div>
           </div>

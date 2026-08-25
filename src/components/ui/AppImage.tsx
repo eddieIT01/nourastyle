@@ -95,15 +95,12 @@ const AppImage = memo(function AppImage({
 
     if (fill) {
         return (
-            <div className="relative" style={{ width: '100%', height: '100%' }}>
-                <Image
-                    {...imageProps}
-                    fill
-                    sizes={sizes || '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'}
-                    style={{ objectFit: 'cover' }}
-                    {...props}
-                />
-            </div>
+            <Image
+                {...imageProps}
+                fill
+                sizes={sizes || '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'}
+                {...props}
+            />
         );
     }
 

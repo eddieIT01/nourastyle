@@ -28,8 +28,8 @@ const ALL_ITEMS: GalleryItem[] = [
   span: 'medium'
 },
 {
-  src: "https://images.unsplash.com/photo-1551562669-8673472fec3c",
-  alt: 'Professional makeup application with warm tones — editorial beauty look',
+  src: "/assets/images/image-1787665927296.png",
+  alt: 'مكياج احترافي للمناسبات والسهرات من صالون نوره ستايل — Professional makeup for events at Noura Style Salon',
   category: 'makeup',
   span: 'medium'
 },
@@ -52,8 +52,8 @@ const ALL_ITEMS: GalleryItem[] = [
   span: 'medium'
 },
 {
-  src: "https://images.unsplash.com/photo-1588849538277-c54a54f9d63a",
-  alt: 'Bridal hair and makeup preparation with romantic soft lighting — elegant finish',
+  src: "/assets/images/image-1787667747398.png",
+  alt: 'عناية بالبشرة وعلاجات متخصصة من صالون نوره ستايل — Specialized skincare treatments at Noura Style Salon',
   category: 'makeup',
   span: 'medium'
 },
@@ -250,19 +250,14 @@ export default function Gallery() {
               src={ALL_ITEMS[3].src}
               alt={ALL_ITEMS[3].alt}
               fill
-              className="object-cover object-center transition-transform duration-900 group-hover:scale-105"
+              className="object-cover transition-transform duration-900 group-hover:scale-105"
               sizes="(max-width: 768px) 50vw, 25vw" />
 
               <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
-                <span className="text-xs tracking-widest uppercase text-foreground font-sans-body">
-                  {t('ماسك الكتان', 'Flaxseed Mask')}
-                </span>
-              </div>
             </div>
           }
 
-          {/* Card 5 — RedHair cs-3 */}
+          {/* Card 5 — Red Hair Small cs-3 */}
           {(active === 'all' || active === 'hair') &&
           <div className="gallery-item col-span-1 lg:col-span-3 img-cover-container group" style={{ minHeight: 'clamp(160px, 20vw, 270px)' }}>
               <AppImage
@@ -272,147 +267,117 @@ export default function Gallery() {
               className="object-cover transition-transform duration-900 group-hover:scale-105"
               sizes="(max-width: 768px) 50vw, 25vw" />
 
+              <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
           }
 
-          {/* Card 6 — Mask2 (asida) cs-4 */}
+          {/* Card 6 — Mask2 (asida) cs-3 */}
           {(active === 'all' || active === 'treatments') &&
-          <div className="gallery-item col-span-2 md:col-span-1 lg:col-span-4 img-cover-container group" style={{ minHeight: 'clamp(200px, 25vw, 340px)' }}>
+          <div className="gallery-item col-span-1 lg:col-span-3 img-cover-container group" style={{ minHeight: 'clamp(160px, 20vw, 270px)' }}>
               <AppImage
               src={ALL_ITEMS[5].src}
               alt={ALL_ITEMS[5].alt}
               fill
-              className="object-cover object-center transition-transform duration-900 group-hover:scale-105"
-              sizes="(max-width: 768px) 100vw, 33vw" />
+              className="object-cover transition-transform duration-900 group-hover:scale-105"
+              sizes="(max-width: 768px) 50vw, 25vw" />
 
               <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
-                <span className="text-xs tracking-widest uppercase text-foreground font-sans-body">
-                  {t('خلطة العصيدة', 'Asida Blend')}
-                </span>
-              </div>
             </div>
           }
 
-          {/* Card 7 — BridalMed cs-4 */}
+          {/* Card 7 — Skincare cs-3 */}
           {(active === 'all' || active === 'makeup') &&
-          <div className="gallery-item col-span-2 md:col-span-1 lg:col-span-4 img-cover-container group" style={{ minHeight: 'clamp(200px, 25vw, 340px)' }}>
+          <div className="gallery-item col-span-1 lg:col-span-3 img-cover-container group" style={{ minHeight: 'clamp(160px, 20vw, 270px)' }}>
               <AppImage
               src={ALL_ITEMS[6].src}
               alt={ALL_ITEMS[6].alt}
               fill
               className="object-cover transition-transform duration-900 group-hover:scale-105"
-              sizes="(max-width: 768px) 100vw, 33vw" />
+              sizes="(max-width: 768px) 50vw, 25vw" />
 
+              <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
           }
 
-          {/* Card 8 — Nails2 cs-4 */}
+          {/* Card 8 — Argentina Nails cs-3 */}
           {(active === 'all' || active === 'nails') &&
-          <div className="gallery-item col-span-2 md:col-span-1 lg:col-span-4 img-cover-container group" style={{ minHeight: 'clamp(200px, 25vw, 340px)' }}>
+          <div className="gallery-item col-span-1 lg:col-span-3 img-cover-container group" style={{ minHeight: 'clamp(160px, 20vw, 270px)' }}>
               <AppImage
               src={ALL_ITEMS[7].src}
               alt={ALL_ITEMS[7].alt}
               fill
               className="object-cover transition-transform duration-900 group-hover:scale-105"
-              sizes="(max-width: 768px) 100vw, 33vw" />
-
-            </div>
-          }
-
-          {/* Card 8b — Nails3 (pink 3D flower) cs-4 */}
-          {(active === 'all' || active === 'nails') &&
-          <div className="gallery-item col-span-2 md:col-span-1 lg:col-span-4 img-cover-container group" style={{ minHeight: 'clamp(200px, 25vw, 340px)' }}>
-              <AppImage
-              src={ALL_ITEMS[14].src}
-              alt={ALL_ITEMS[14].alt}
-              fill
-              className="object-cover transition-transform duration-900 group-hover:scale-105"
-              sizes="(max-width: 768px) 100vw, 33vw" />
+              sizes="(max-width: 768px) 50vw, 25vw" />
 
               <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
           }
 
-          {/* Card 9 — Mask3 (rosemary) wide banner */}
+          {/* Card 9 — Mask3 (rosemary) cs-3 */}
           {(active === 'all' || active === 'treatments') &&
-          <div className="gallery-item col-span-2 md:col-span-3 lg:col-span-8 img-cover-container group" style={{ minHeight: 'clamp(180px, 20vw, 300px)' }}>
+          <div className="gallery-item col-span-1 lg:col-span-3 img-cover-container group" style={{ minHeight: 'clamp(160px, 20vw, 270px)' }}>
               <AppImage
               src={ALL_ITEMS[8].src}
               alt={ALL_ITEMS[8].alt}
               fill
-              className="object-cover object-center transition-transform duration-900 group-hover:scale-105"
-              sizes="(max-width: 768px) 100vw, 66vw" />
+              className="object-cover transition-transform duration-900 group-hover:scale-105"
+              sizes="(max-width: 768px) 50vw, 25vw" />
 
-              <div className="absolute inset-0 bg-gradient-to-r from-background/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
-                <span className="text-xs tracking-widest uppercase text-foreground font-sans-body">
-                  {t('خلطة الروزماري', 'Rosemary Treatment')}
-                </span>
-              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
           }
 
-          {/* Card 10 — Blonde hair cs-4 */}
+          {/* Card 10 — Blonde Hair Small cs-3 */}
           {(active === 'all' || active === 'hair') &&
-          <div className="gallery-item col-span-2 md:col-span-1 lg:col-span-4 img-cover-container group" style={{ minHeight: 'clamp(180px, 20vw, 300px)' }}>
+          <div className="gallery-item col-span-1 lg:col-span-3 img-cover-container group" style={{ minHeight: 'clamp(160px, 20vw, 270px)' }}>
               <AppImage
               src={ALL_ITEMS[9].src}
               alt={ALL_ITEMS[9].alt}
               fill
               className="object-cover transition-transform duration-900 group-hover:scale-105"
-              sizes="(max-width: 768px) 100vw, 33vw" />
+              sizes="(max-width: 768px) 50vw, 25vw" />
 
+              <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
           }
 
-          {/* Card 11 — Mask4 (henna with herbs) cs-6 */}
+          {/* Card 11 — Mask4 (henna) cs-3 */}
           {(active === 'all' || active === 'treatments') &&
-          <div className="gallery-item col-span-2 md:col-span-2 lg:col-span-6 img-cover-container group" style={{ minHeight: 'clamp(200px, 25vw, 340px)' }}>
+          <div className="gallery-item col-span-1 lg:col-span-3 img-cover-container group" style={{ minHeight: 'clamp(160px, 20vw, 270px)' }}>
               <AppImage
               src={ALL_ITEMS[10].src}
               alt={ALL_ITEMS[10].alt}
               fill
-              className="object-cover object-center transition-transform duration-900 group-hover:scale-105"
-              sizes="(max-width: 768px) 100vw, 50vw" />
+              className="object-cover transition-transform duration-900 group-hover:scale-105"
+              sizes="(max-width: 768px) 50vw, 25vw" />
 
               <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
-                <span className="text-xs tracking-widest uppercase text-foreground font-sans-body">
-                  {t('حنة بالأعشاب', 'Henna with Herbs')}
-                </span>
-              </div>
             </div>
           }
 
-          {/* Card 12 — Mask5 (ginger-hibiscus) cs-6 */}
+          {/* Card 12 — Mask5 (ginger-hibiscus) cs-3 */}
           {(active === 'all' || active === 'treatments') &&
-          <div className="gallery-item col-span-2 md:col-span-1 lg:col-span-6 img-cover-container group" style={{ minHeight: 'clamp(200px, 25vw, 340px)' }}>
+          <div className="gallery-item col-span-1 lg:col-span-3 img-cover-container group" style={{ minHeight: 'clamp(160px, 20vw, 270px)' }}>
               <AppImage
               src={ALL_ITEMS[11].src}
               alt={ALL_ITEMS[11].alt}
               fill
-              className="object-cover object-center transition-transform duration-900 group-hover:scale-105"
-              sizes="(max-width: 768px) 100vw, 50vw" />
+              className="object-cover transition-transform duration-900 group-hover:scale-105"
+              sizes="(max-width: 768px) 50vw, 25vw" />
 
               <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
-                <span className="text-xs tracking-widest uppercase text-foreground font-sans-body">
-                  {t('زنجبيل وكركديه', 'Ginger & Hibiscus')}
-                </span>
-              </div>
             </div>
           }
 
-          {/* Card 13 — Salon Interior (chairs) cs-8 */}
+          {/* Card 13 — Salon Large cs-6 */}
           {(active === 'all' || active === 'salon') &&
-          <div className="gallery-item col-span-2 md:col-span-2 lg:col-span-8 img-cover-container group" style={{ minHeight: 'clamp(220px, 28vw, 380px)' }}>
+          <div className="gallery-item col-span-2 md:col-span-2 lg:col-span-6 img-cover-container group" style={{ minHeight: 'clamp(200px, 28vw, 380px)' }}>
               <AppImage
               src={ALL_ITEMS[12].src}
               alt={ALL_ITEMS[12].alt}
               fill
               className="object-cover transition-transform duration-900 group-hover:scale-105"
-              sizes="(max-width: 768px) 100vw, 66vw" />
+              sizes="(max-width: 768px) 100vw, 50vw" />
 
               <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
@@ -423,43 +388,50 @@ export default function Gallery() {
             </div>
           }
 
-          {/* Card 14 — Salon Lounge (rattan) cs-4 */}
+          {/* Card 14 — Salon Lounge cs-3 */}
           {(active === 'all' || active === 'salon') &&
-          <div className="gallery-item col-span-2 md:col-span-1 lg:col-span-4 img-cover-container group" style={{ minHeight: 'clamp(220px, 28vw, 380px)' }}>
+          <div className="gallery-item col-span-1 lg:col-span-3 img-cover-container group" style={{ minHeight: 'clamp(160px, 20vw, 270px)' }}>
               <AppImage
               src={ALL_ITEMS[13].src}
               alt={ALL_ITEMS[13].alt}
               fill
               className="object-cover transition-transform duration-900 group-hover:scale-105"
-              sizes="(max-width: 768px) 100vw, 33vw" />
+              sizes="(max-width: 768px) 50vw, 25vw" />
 
               <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0">
-                <span className="text-xs tracking-widest uppercase text-foreground font-sans-body">
-                  {t('منطقة الانتظار', 'Lounge Area')}
-                </span>
-              </div>
+            </div>
+          }
+
+          {/* Card 15 — Pink 3D Nails cs-3 */}
+          {(active === 'all' || active === 'nails') &&
+          <div className="gallery-item col-span-1 lg:col-span-3 img-cover-container group" style={{ minHeight: 'clamp(160px, 20vw, 270px)' }}>
+              <AppImage
+              src={ALL_ITEMS[14].src}
+              alt={ALL_ITEMS[14].alt}
+              fill
+              className="object-cover transition-transform duration-900 group-hover:scale-105"
+              sizes="(max-width: 768px) 50vw, 25vw" />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
           }
         </div>
 
         {/* Instagram CTA */}
-        <div className={`mt-16 flex flex-col items-center gap-6 text-center`}>
-          <p className="font-arabic text-lg text-foreground-muted">
-            {t('تابعينا على انستغرام لأحدث الأعمال', 'Follow us on Instagram for the latest work')}
-          </p>
+        <div className="mt-12 text-center">
           <a
             href={SALON_INSTAGRAM}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-outline flex items-center gap-3">
+            className="btn-outline inline-flex items-center gap-3">
 
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
               <circle cx="12" cy="12" r="4" />
               <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
             </svg>
-            <span>{SALON_INSTAGRAM_HANDLE}</span>
+            <span>{t('المزيد على انستغرام', 'MORE ON INSTAGRAM')}</span>
+            <span className="text-accent font-sans-body">{SALON_INSTAGRAM_HANDLE}</span>
           </a>
         </div>
       </div>

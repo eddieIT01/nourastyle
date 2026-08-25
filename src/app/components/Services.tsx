@@ -150,7 +150,7 @@ export default function Services() {
                   rel="noopener noreferrer"
                   className="btn-primary">
 
-                    <span>{t('احجزي الآن', 'Book Now')}</span>
+                    <span>{t('استفسري عن الخدمة', 'Ask About This Service')}</span>
                   </a>
                 </div>
               </div>

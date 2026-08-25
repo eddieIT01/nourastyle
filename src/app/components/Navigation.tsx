@@ -90,7 +90,7 @@ export default function Navigation() {
               rel="noopener noreferrer"
               className="hidden md:flex btn-primary text-xs"
             >
-              <span>{t('احجزي موعدك', 'Book Now')}</span>
+              <span>{t('تواصلي معنا', 'Contact Us')}</span>
             </a>
 
             {/* Mobile Hamburger */}
