@@ -102,8 +102,8 @@ const SERVICES_RAW = [
   en: 'Eyelashes',
   descAr: 'تركيب رموش احترافي لإطلالة مميزة وعيون ساحرة',
   descEn: 'Professional eyelash application for a stunning, captivating look',
-  image: "/assets/images/norasalonpic-1787669118935.png",
-  imageAlt: 'خدمة تركيب الرموش الاحترافية في صالون نوره ستايل — Professional eyelash application at Noura Style Salon',
+  image: "/assets/images/image-1787670994149.png?v=2",
+  imageAlt: 'تركيب رموش احترافي وتصميم حواجب في صالون نوره ستايل — Professional eyelash application and brow styling at Noura Style Salon',
   messageAr: 'مرحباً، أرغب في حجز موعد لخدمة تركيب الرموش (رموش) في صالون نوره ستايل. أرجو تزويدي بالمواعيد المتاحة. شكراً.',
   messageEn: 'Hello, I would like to book an Eyelashes appointment at Noura Style Salon. Please let me know the available appointments. Thank you.'
 },

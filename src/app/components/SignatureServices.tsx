@@ -107,7 +107,7 @@ export default function SignatureServices() {
           <div className="relative overflow-hidden group" style={{ minHeight: 'clamp(280px, 40vw, 440px)' }}>
             <AppImage
               src="/assets/images/lulunora-1787668372501.png"
-              alt="تسريحة شعر بتجعيدات حلزونية ذهبية كارميل من صالون نوره ستايل — Golden caramel spiral curls hair styling at Nora Style Salon"
+              alt="تسريحة شعر بتجعيدات حلزونية ذهبية كارميل من صالون نوره ستايل — Golden caramel spiral curls hair styling at Noura Style Salon"
               fill
               className="object-cover transition-transform duration-1000 group-hover:scale-[1.04]"
               sizes="50vw" />
