@@ -60,32 +60,20 @@ const SERVICES_RAW = [
   messageEn: 'Hello, I would like to ask about the Nails (Manicure/Pedicure) service at Noura Style Salon. Please provide details. Thank you.'
 },
 {
-  id: 'makeup',
-  num: '04',
-  ar: 'المكياج',
-  en: 'Makeup',
-  descAr: 'مكياج احترافي للمناسبات والسهرات والأفراح',
-  descEn: 'Professional makeup for events, evenings, and celebrations',
-  image: "/assets/images/image-1787665927296.png",
-  imageAlt: 'مكياج احترافي للمناسبات والسهرات من صالون نوره ستايل — Professional makeup for events at Noura Style Salon',
-  messageAr: 'مرحباً، أرغب في الاستفسار عن خدمة المكياج في صالون نوره ستايل. أرجو تزويدي بالتفاصيل. شكراً.',
-  messageEn: 'Hello, I would like to ask about the Makeup service at Noura Style Salon. Please provide details. Thank you.'
-},
-{
   id: 'skincare',
-  num: '05',
+  num: '04',
   ar: 'العناية بالبشرة',
   en: 'Skin Care',
   descAr: 'علاجات متخصصة للعناية بالبشرة وتجديد الإشراق',
   descEn: 'Specialized skin care treatments for radiant, healthy skin',
-  image: "/assets/images/image-1787667747398.png",
-  imageAlt: 'عناية بالبشرة وعلاجات متخصصة من صالون نوره ستايل — Specialized skincare treatments at Noura Style Salon',
+  image: "/assets/images/lulunora-1787674046359.png",
+  imageAlt: 'تجعيدات حلزونية طويلة بلون كارميل أوبري مع شعار نوره ستايل — Auburn caramel long spiral curls at Noura Style Salon',
   messageAr: 'مرحباً، أرغب في الاستفسار عن خدمة العناية بالبشرة في صالون نوره ستايل. أرجو تزويدي بالتفاصيل. شكراً.',
   messageEn: 'Hello, I would like to ask about the Skincare service at Noura Style Salon. Please provide details. Thank you.'
 },
 {
   id: 'natural-hair-masks',
-  num: '06',
+  num: '05',
   ar: 'خلطات الشعر الطبيعية',
   en: 'Natural Hair Masks',
   descAr: 'خلطات طبيعية مميزة لتغذية الشعر وترطيبه — حنة بالأعشاب، زنجبيل وكركديه، ماسك الكتان، وخلطات الأعشاب الطبيعية',
@@ -97,7 +85,7 @@ const SERVICES_RAW = [
 },
 {
   id: 'eyelashes',
-  num: '07',
+  num: '06',
   ar: 'تركيب الرموش',
   en: 'Eyelashes',
   descAr: 'تركيب رموش احترافي لإطلالة مميزة وعيون ساحرة',
@@ -109,13 +97,13 @@ const SERVICES_RAW = [
 },
 {
   id: 'hair-extensions',
-  num: '08',
+  num: '07',
   ar: 'وصلات الشعر',
   en: 'Hair Extensions',
   descAr: 'وصلات شعر طبيعية وعالية الجودة لإضافة الطول والكثافة',
   descEn: 'Natural, high-quality hair extensions for added length and volume',
-  image: "/assets/images/lulunora-1787668372501.png",
-  imageAlt: 'وصلات شعر احترافية بتجعيدات ذهبية كارميل من صالون نوره ستايل — Professional hair extensions at Noura Style Salon',
+  image: "/assets/images/blonde-1787666367749.png",
+  imageAlt: 'وصلات شعر بلون بلوند أومبري وبالياج من صالون نوره ستايل — Blonde ombré balayage hair extensions at Noura Style Salon',
   messageAr: 'مرحباً، أرغب في الاستفسار عن خدمة وصلات الشعر في صالون نوره ستايل. أرجو تزويدي بالتفاصيل. شكراً.',
   messageEn: 'Hello, I would like to ask about the Hair Extensions service at Noura Style Salon. Please provide details. Thank you.'
 }];
