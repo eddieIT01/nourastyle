@@ -58,10 +58,10 @@ const ALL_ITEMS: GalleryItem[] = [
   span: 'medium'
 },
 {
-  src: "/assets/images/khaltatsh3r-1787667160201.png",
-  alt: 'فن أظافر أوشن بلو من صالون نوره ستايل — blue ocean nail art design',
+  src: "/assets/images/image-1787671443892.png",
+  alt: 'فن أظافر أرجنتين بألوان أزرق وأبيض وذهبي مع رقم 10 — Argentina-themed blue white and gold nail art with number 10 at Noura Style Salon',
   category: 'nails',
-  span: 'small'
+  span: 'medium'
 },
 {
   src: "/assets/images/khaltatsh3r3-1787667609582.png",
@@ -97,6 +97,12 @@ const ALL_ITEMS: GalleryItem[] = [
   src: "/assets/images/noraplace-1787669122158.png",
   alt: 'صالون نوره ستايل — منطقة الانتظار بالكراسي الراتان والجدار الأخضر النباتي — Noura Style Salon rattan lounge waiting area with green plant wall',
   category: 'salon',
+  span: 'medium'
+},
+{
+  src: "/assets/images/image-1787671646618.png",
+  alt: 'فن أظافر وردي ثلاثي الأبعاد بزهور وبولكا دوت وخطوط ذهبية — Pink 3D flower nail art with polka dots and gold stripes at Noura Style Salon',
+  category: 'nails',
   span: 'medium'
 }];
 
@@ -311,6 +317,20 @@ export default function Gallery() {
               className="object-cover transition-transform duration-900 group-hover:scale-105"
               sizes="(max-width: 768px) 100vw, 33vw" />
 
+            </div>
+          }
+
+          {/* Card 8b — Nails3 (pink 3D flower) cs-4 */}
+          {(active === 'all' || active === 'nails') &&
+          <div className="gallery-item col-span-2 md:col-span-1 lg:col-span-4 img-cover-container group" style={{ minHeight: 'clamp(200px, 25vw, 340px)' }}>
+              <AppImage
+              src={ALL_ITEMS[14].src}
+              alt={ALL_ITEMS[14].alt}
+              fill
+              className="object-cover transition-transform duration-900 group-hover:scale-105"
+              sizes="(max-width: 768px) 100vw, 33vw" />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
           }
 

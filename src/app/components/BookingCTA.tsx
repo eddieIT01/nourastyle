@@ -46,8 +46,8 @@ export default function BookingCTA() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <AppImage
-          src="https://img.rocket.new/generatedImages/rocket_gen_img_1f3dc9054-1782809993954.png"
-          alt="Luxury hair salon interior with warm atmospheric lighting — professional beauty environment"
+          src="/assets/images/norasalonpic-1787669118935.png"
+          alt="صالون نوره ستايل — كراسي التصفيف الاحترافية والمرايا في الصالون — Noura Style Salon professional styling chairs and mirrors interior"
           fill
           className="object-cover"
           sizes="100vw" />
