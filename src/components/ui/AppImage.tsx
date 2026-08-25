@@ -40,7 +40,16 @@ const AppImage = memo(function AppImage({
     unoptimized = false,
     ...props
 }: AppImageProps) {
-    const [imageSrc, setImageSrc] = useState(src);
+    // Strip query strings from local image paths (e.g. ?v=2) — Next.js localPatterns
+    // does not support wildcard search matching, and local assets don't need cache-busting params.
+    const cleanSrc = useMemo(() => {
+        if (typeof src === 'string' && src.startsWith('/') && src.includes('?')) {
+            return src.split('?')[0];
+        }
+        return src;
+    }, [src]);
+
+    const [imageSrc, setImageSrc] = useState(cleanSrc);
     const [isLoading, setIsLoading] = useState(true);
     const [hasError, setHasError] = useState(false);
 
